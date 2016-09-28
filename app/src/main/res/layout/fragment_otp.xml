@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/_30sdp"
+    android:paddingRight="@dimen/_30sdp">
+
+    <com.mycrops.view.MyCropsEditText
+        android:id="@+id/fragment_otp_etnumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/login_edittext_style"
+        android:hint="@string/hint_enter_otp"
+        android:inputType="number"
+        android:maxLength="10"
+        android:maxLines="1"
+        android:padding="@dimen/_8sdp"
+        android:textColor="@color/textColorPrimary"
+        android:textColorHint="@color/textColorPrimary"
+        android:textSize="@dimen/_14sdp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_8sdp"
+        android:layout_marginRight="@dimen/_8sdp"
+        android:layout_marginTop="@dimen/_2sdp">
+
+        <com.mycrops.view.MyCropsTextView
+            android:id="@+id/fragment_otp_tvresendcode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/resend_code"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/_10sdp" />
+
+        <com.mycrops.view.MyCropsTextView
+            android:id="@+id/fragment_otp_tvtime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="05 sec remaining"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/_10sdp" />
+    </RelativeLayout>
+
+    <com.mycrops.view.MyCropsButton
+        android:id="@+id/fragment_otp_btnSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="@drawable/login_button_style"
+        android:padding="@dimen/_8sdp"
+        android:text="Submit"
+        android:textAllCaps="false"
+        android:textColor="@color/textColorPrimary"
+        android:textSize="@dimen/_16sdp" />
+
+</LinearLayout>
