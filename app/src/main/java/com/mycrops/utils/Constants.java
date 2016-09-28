@@ -5,7 +5,8 @@ public class Constants {
     public static final String BASE_URL = "http://mycrop.hnyb.in/api";
 //    validation
     public static final int OTP_LENGTH = 6;
-
+    public static final int FORGOT_PASSWORD_OTP_REQUEST = 2;
+    public static final int REGISTRATION_OTP_REQUEST = 1;
     //Api method name
     public static final String MODULE = "user";
     public static final String MODULE_LAND = "land";

@@ -21,11 +21,11 @@ import okhttp3.RequestBody;
  * *                                                                            *
  * *                                                                            *
  *******************************************************************************/
-public class WSOtp {
+public class WSRequestOtp {
     private String message = "";
     private int success = 0;
 
-    public WSOtp(Context context) {
+    public WSRequestOtp(Context context) {
     }
 
     public String getMessage() {
@@ -36,21 +36,17 @@ public class WSOtp {
         return success;
     }
 
-    public String executeWebservice(String mobile, String request_type, String otp) {
+    public String executeWebservice(String mobile, String request_type) {
         final String url = Constants.BASE_URL + "/" + Constants.MODULE + "/" + Constants.OTP_VERIFICATION;
-
-        return WSUtils.callServiceHttpPost(url, generateRequest(mobile, request_type, otp));
+        return WSUtils.callServiceHttpPost(url, generateRequest(mobile, request_type));
     }
 
 
-
-
-    private RequestBody generateRequest(String mobile, String request_type, String otp) {
+    private RequestBody generateRequest(String mobile, String request_type) {
         RequestBody formBody = new FormBody.Builder()
-                .add("mobile_no", mobile).add("request_type", request_type).add("otp_code", otp)
+                .add("mobile_no", mobile).add("request_type", request_type)
                 .build();
         return formBody;
 
     }
-
 }
