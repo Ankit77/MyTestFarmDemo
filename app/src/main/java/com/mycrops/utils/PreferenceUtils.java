@@ -20,7 +20,6 @@ public class PreferenceUtils {
         editor.apply();
     }
 
-
     public void putInt(final String key, final int value) {
         final SharedPreferences.Editor editor = sharedPreferences.edit();
         editor.putInt(key, value);
@@ -32,5 +31,28 @@ public class PreferenceUtils {
         editor.putLong(key, value);
         editor.apply();
     }
+
+    public void putFloat(final String key, final float value) {
+        final SharedPreferences.Editor editor = sharedPreferences.edit();
+        editor.putFloat(key, value);
+        editor.apply();
+    }
+
+    public String getString(final String key) {
+        return sharedPreferences.getString(key, "");
+    }
+
+    public float getFloat(final String key) {
+        return sharedPreferences.getFloat(key, 0f);
+    }
+
+    public int getInt(final String key) {
+        return sharedPreferences.getInt(key, 0);
+    }
+
+    public long getLong(final String key) {
+        return sharedPreferences.getLong(key, 0L);
+    }
+
 
 }
