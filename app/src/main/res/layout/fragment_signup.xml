@@ -53,6 +53,7 @@
 
 
     <com.mycrops.view.MyCropsTextView
+        android:id="@+id/fragment_signup_tv_password"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/password"
@@ -64,7 +65,6 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="@dimen/_15sdp"
         android:orientation="horizontal">
 
         <com.mycrops.view.MyCropsEditText
@@ -93,6 +93,51 @@
 
     </LinearLayout>
 
+    <com.mycrops.view.MyCropsTextView
+        android:id="@+id/fragment_signup_tv_validation_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_2sdp"
+        android:text="@string/valid_msg_password"
+        android:textColor="@color/colorLoginLabel"
+        android:textSize="@dimen/_7sdp"
+        app:fontName="@string/tv_font" />
+
+
+
+
+    <com.mycrops.view.MyCropsTextView
+        android:id="@+id/forgot_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:text="@string/forgot_password"
+        app:fontName="@string/tv_font"
+        android:textColor="@color/colorLoginLabel"
+        android:textSize="@dimen/_10sdp" />
+
+    <com.mycrops.view.MyCropsButton
+        android:id="@+id/fragment_signup_btn_sign_in"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/login_button_style"
+        android:text="@string/sign_in"
+        android:textAllCaps="false"
+        android:layout_marginTop="@dimen/_2sdp"
+        android:textColor="@color/textColorPrimary"
+        android:textSize="@dimen/_10sdp"
+        app:fontName="@string/btn_font" />
+
+    <com.mycrops.view.MyCropsButton
+        android:id="@+id/fragment_signup_btn_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:background="@drawable/login_button_style"
+        android:text="@string/register"
+        android:textAllCaps="false"
+        android:textColor="@color/textColorPrimary"
+        android:textSize="@dimen/_10sdp" />
 
 
 </LinearLayout>
