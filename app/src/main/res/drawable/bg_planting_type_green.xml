@@ -5,7 +5,7 @@
 
     <stroke
         android:width="3dp"
-        android:color="@color/colorPrimary" />
+        android:color="@color/colorLoginBtn" />
 
     <solid android:color="@android:color/transparent" />
 

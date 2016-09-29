@@ -7,7 +7,7 @@
 
 
     <stroke
-        android:color="@color/textview_color"
+        android:color="@color/colorTextView"
         android:width="1dp"
         />
 

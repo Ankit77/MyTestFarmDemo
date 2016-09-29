@@ -1,6 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimary">#7dba30</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+
+
+    <!-- Login -->
+    <color name="colorEditTextBorder">#fafafa</color>
+    <color name="colorLoginBtn">#7dba30</color>
+    <color name="colorLoginLabel">#ecffdc</color>
+    <!-- This is the primary color of text. This applies to toolbar title. -->
+    <color name="textColorPrimary">#FFFFFF</color>
+    <!-- Personal Detai -->
+    <color name="colorTextView">#6c6b6b</color>
+    <color name="colorEditText">#8c8b8b</color>
+
+    <color name="colorRed">#FF0000</color>
+    <color name="colorTabSelected">#7eb72d</color>
+    <color name="colorTabUnSelected">@color/colorPrimary</color>
 </resources>

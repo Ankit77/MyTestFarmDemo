@@ -9,8 +9,8 @@
 
     <gradient
         android:angle="270"
-        android:endColor="@color/login_btn"
-        android:startColor="@color/login_btn"
+        android:endColor="@color/colorLoginBtn"
+        android:startColor="@color/colorLoginBtn"
         android:type="linear" />
 
 </shape>
